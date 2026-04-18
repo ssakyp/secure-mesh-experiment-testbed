@@ -1,0 +1,13 @@
+NAME                                   READY   STATUS    RESTARTS   AGE   IP          NODE                            NOMINATED NODE   READINESS GATES
+account-service-844f794748-rtvhr       2/2     Running   0          68m   10.42.4.6   k3d-research-cluster-server-0   <none>           <none>
+api-gateway-659986599d-9fdll           2/2     Running   0          68m   10.42.4.4   k3d-research-cluster-server-0   <none>           <none>
+audit-service-79bf45bb6d-z4pns         2/2     Running   0          68m   10.42.1.5   k3d-research-cluster-agent-1    <none>           <none>
+auth-service-6cb5b4799-g5wqv           2/2     Running   0          68m   10.42.0.5   k3d-research-cluster-agent-0    <none>           <none>
+card-management-fbfcf657c-vd5xr        2/2     Running   0          68m   10.42.0.7   k3d-research-cluster-agent-0    <none>           <none>
+currency-exchange-654f59674b-th2f9     2/2     Running   0          68m   10.42.4.5   k3d-research-cluster-server-0   <none>           <none>
+fraud-analytics-f95986d5d-7mjpl        2/2     Running   0          68m   10.42.0.6   k3d-research-cluster-agent-0    <none>           <none>
+ledger-service-7d8c948444-47lqx        2/2     Running   0          68m   10.42.2.6   k3d-research-cluster-agent-2    <none>           <none>
+notification-service-5d4f7d798-rb85k   2/2     Running   0          68m   10.42.2.5   k3d-research-cluster-agent-2    <none>           <none>
+reporting-service-55f8df976c-wbtll     2/2     Running   0          68m   10.42.1.7   k3d-research-cluster-agent-1    <none>           <none>
+transaction-service-7949568b65-gj8np   2/2     Running   0          68m   10.42.0.4   k3d-research-cluster-agent-0    <none>           <none>
+user-profile-67c97bd484-6l2ps          2/2     Running   0          68m   10.42.1.6   k3d-research-cluster-agent-1    <none>           <none>

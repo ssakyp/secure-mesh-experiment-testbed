@@ -1,0 +1,10 @@
+NAME                                   CPU(cores)   MEMORY(bytes)   
+audit-service-79bf45bb6d-z4pns         17m          41Mi            
+auth-service-6cb5b4799-g5wqv           95m          72Mi            
+card-management-fbfcf657c-vd5xr        53m          140Mi           
+fraud-analytics-f95986d5d-7mjpl        127m         125Mi           
+ledger-service-7d8c948444-47lqx        23m          138Mi           
+notification-service-5d4f7d798-rb85k   18m          72Mi            
+reporting-service-55f8df976c-wbtll     25m          71Mi            
+transaction-service-7949568b65-gj8np   162m         176Mi           
+user-profile-67c97bd484-6l2ps          30m          72Mi            

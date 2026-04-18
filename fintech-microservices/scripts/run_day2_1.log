@@ -1,0 +1,14 @@
+[batch] Day 2 start: reps=1
+[scenario:A] Baseline
+[run] 20260329-1542-A-100-01
+[run] 20260329-1543-A-300-01
+[run] 20260329-1544-A-500-01
+[scenario:B] JWT-only
+[run] 20260329-1545-B-100-01
+[run] 20260329-1546-B-300-01
+[run] 20260329-1547-B-500-01
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260329-1548-C-100-01
+[run] 20260329-1549-C-300-01
+[run] 20260329-1550-C-500-01
+[done] Day 2 batch complete. Artifacts: /Users/sultansakyp/research/fintech-microservices/artifacts/runs

@@ -1,0 +1,92 @@
+[batch] Day 3 start: reps=10
+[scenario:A] Baseline
+[run] 20260330-0900-A-700-01
+[run] 20260330-0901-A-1000-01
+[scenario:B] JWT-only
+[run] 20260330-0902-B-700-01
+[run] 20260330-0904-B-1000-01
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-0905-C-700-01
+[run] 20260330-0906-C-1000-01
+[scenario:A] Baseline
+[run] 20260330-0907-A-700-02
+[run] 20260330-0908-A-1000-02
+[scenario:B] JWT-only
+[run] 20260330-0909-B-700-02
+[run] 20260330-0910-B-1000-02
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-0912-C-700-02
+[run] 20260330-0913-C-1000-02
+[scenario:A] Baseline
+[run] 20260330-0914-A-700-03
+[run] 20260330-0915-A-1000-03
+[scenario:B] JWT-only
+[run] 20260330-0916-B-700-03
+[run] 20260330-0917-B-1000-03
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-0919-C-700-03
+[run] 20260330-0920-C-1000-03
+[scenario:A] Baseline
+[run] 20260330-0921-A-700-04
+[run] 20260330-0922-A-1000-04
+[scenario:B] JWT-only
+[run] 20260330-0923-B-700-04
+[run] 20260330-0924-B-1000-04
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-0926-C-700-04
+[run] 20260330-0927-C-1000-04
+[scenario:A] Baseline
+[run] 20260330-0929-A-700-05
+[run] 20260330-0930-A-1000-05
+[scenario:B] JWT-only
+[run] 20260330-0931-B-700-05
+[run] 20260330-0932-B-1000-05
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-0933-C-700-05
+[run] 20260330-0934-C-1000-05
+[scenario:A] Baseline
+[run] 20260330-0936-A-700-06
+[run] 20260330-0937-A-1000-06
+[scenario:B] JWT-only
+[run] 20260330-0938-B-700-06
+[run] 20260330-0939-B-1000-06
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-0940-C-700-06
+[run] 20260330-0941-C-1000-06
+[scenario:A] Baseline
+[run] 20260330-0942-A-700-07
+[run] 20260330-0944-A-1000-07
+[scenario:B] JWT-only
+[run] 20260330-0945-B-700-07
+[run] 20260330-0946-B-1000-07
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-0947-C-700-07
+[run] 20260330-0948-C-1000-07
+[scenario:A] Baseline
+[run] 20260330-0949-A-700-08
+[run] 20260330-0950-A-1000-08
+[scenario:B] JWT-only
+[run] 20260330-0952-B-700-08
+[run] 20260330-0953-B-1000-08
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-0954-C-700-08
+[run] 20260330-0955-C-1000-08
+[scenario:A] Baseline
+[run] 20260330-0956-A-700-09
+[run] 20260330-0957-A-1000-09
+[scenario:B] JWT-only
+[run] 20260330-0958-B-700-09
+[run] 20260330-1000-B-1000-09
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-1001-C-700-09
+[run] 20260330-1002-C-1000-09
+[scenario:A] Baseline
+[run] 20260330-1003-A-700-10
+[run] 20260330-1004-A-1000-10
+[scenario:B] JWT-only
+[run] 20260330-1005-B-700-10
+[run] 20260330-1007-B-1000-10
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260330-1008-C-700-10
+[run] 20260330-1009-C-1000-10
+[done] Day 3 batch complete. Artifacts: /Users/sultansakyp/research/fintech-microservices/artifacts/runs

@@ -1,0 +1,40 @@
+--- POD CUMULATIVE RESOURCE METRICS (FINTECH-APP) ---
+POD                                    NAME                   CPU(cores)   MEMORY(bytes)   
+account-service-844f794748-jblms       account-service        4m           141Mi           
+account-service-844f794748-jblms       istio-proxy            4m           44Mi            
+api-gateway-659986599d-bpzb9           api-gateway            0m           15Mi            
+api-gateway-659986599d-bpzb9           istio-proxy            567m         61Mi            
+audit-service-79bf45bb6d-ftxb5         audit-service          0m           4Mi             
+audit-service-79bf45bb6d-ftxb5         istio-proxy            4m           36Mi            
+auth-service-6cb5b4799-qsb94           auth-service           0m           11Mi            
+auth-service-6cb5b4799-qsb94           istio-proxy            3m           42Mi            
+card-management-fbfcf657c-df5qn        card-management        2m           97Mi            
+card-management-fbfcf657c-df5qn        istio-proxy            3m           41Mi            
+currency-exchange-654f59674b-bgfqz     currency-exchange      0m           0Mi             
+currency-exchange-654f59674b-bgfqz     istio-proxy            3m           42Mi            
+fraud-analytics-f95986d5d-l52pf        fraud-analytics        2m           34Mi            
+fraud-analytics-f95986d5d-l52pf        istio-proxy            3m           47Mi            
+ledger-service-7d8c948444-j6gp9        istio-proxy            3m           38Mi            
+ledger-service-7d8c948444-j6gp9        ledger-service         3m           100Mi           
+notification-service-5d4f7d798-zm2gd   istio-proxy            2m           36Mi            
+notification-service-5d4f7d798-zm2gd   notification-service   2m           31Mi            
+reporting-service-55f8df976c-rtlck     istio-proxy            2m           37Mi            
+reporting-service-55f8df976c-rtlck     reporting-service      2m           33Mi            
+transaction-service-7949568b65-b8slk   istio-proxy            4m           58Mi            
+transaction-service-7949568b65-b8slk   transaction-service    0m           14Mi            
+user-profile-67c97bd484-c6n8n          istio-proxy            3m           41Mi            
+user-profile-67c97bd484-c6n8n          user-profile           2m           30Mi            
+--- SIDE-CAR ISTIO OVERHEAD VS APP PROCESS ---
+NAME                                   CPU(cores)   MEMORY(bytes)   
+account-service-844f794748-jblms       7m           186Mi           
+api-gateway-659986599d-bpzb9           567m         76Mi            
+audit-service-79bf45bb6d-ftxb5         4m           41Mi            
+auth-service-6cb5b4799-qsb94           3m           53Mi            
+card-management-fbfcf657c-df5qn        5m           138Mi           
+currency-exchange-654f59674b-bgfqz     3m           43Mi            
+fraud-analytics-f95986d5d-l52pf        5m           82Mi            
+ledger-service-7d8c948444-j6gp9        6m           138Mi           
+notification-service-5d4f7d798-zm2gd   3m           67Mi            
+reporting-service-55f8df976c-rtlck     4m           70Mi            
+transaction-service-7949568b65-b8slk   4m           73Mi            
+user-profile-67c97bd484-c6n8n          5m           72Mi            
