@@ -1,0 +1,62 @@
+[batch] Day 2 start: reps=5
+[scenario:A] Baseline
+[run] 20260329-1627-A-100-01
+[run] 20260329-1628-A-300-01
+[run] 20260329-1629-A-500-01
+[scenario:B] JWT-only
+[run] 20260329-1630-B-100-01
+[run] 20260329-1631-B-300-01
+[run] 20260329-1632-B-500-01
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260329-1634-C-100-01
+[run] 20260329-1635-C-300-01
+[run] 20260329-1636-C-500-01
+[scenario:A] Baseline
+[run] 20260329-1637-A-100-02
+[run] 20260329-1638-A-300-02
+[run] 20260329-1639-A-500-02
+[scenario:B] JWT-only
+[run] 20260329-1640-B-100-02
+[run] 20260329-1641-B-300-02
+[run] 20260329-1642-B-500-02
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260329-1644-C-100-02
+[run] 20260329-1645-C-300-02
+[run] 20260329-1646-C-500-02
+[scenario:A] Baseline
+[run] 20260329-1647-A-100-03
+[run] 20260329-1648-A-300-03
+[run] 20260329-1649-A-500-03
+[scenario:B] JWT-only
+[run] 20260329-1650-B-100-03
+[run] 20260329-1651-B-300-03
+[run] 20260329-1652-B-500-03
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260329-1654-C-100-03
+[run] 20260329-1655-C-300-03
+[run] 20260329-1656-C-500-03
+[scenario:A] Baseline
+[run] 20260329-1657-A-100-04
+[run] 20260329-1658-A-300-04
+[run] 20260329-1659-A-500-04
+[scenario:B] JWT-only
+[run] 20260329-1700-B-100-04
+[run] 20260329-1701-B-300-04
+[run] 20260329-1702-B-500-04
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260329-1841-C-100-04
+[run] 20260329-1922-C-300-04
+[run] 20260329-2040-C-500-04
+[scenario:A] Baseline
+[run] 20260329-2149-A-100-05
+[run] 20260329-2209-A-300-05
+[run] 20260329-2307-A-500-05
+[scenario:B] JWT-only
+[run] 20260329-0024-B-100-05
+[run] 20260329-0109-B-300-05
+[run] 20260329-0210-B-500-05
+[scenario:C] Strict mTLS+AuthZ
+[run] 20260329-0311-C-100-05
+[run] 20260329-0327-C-300-05
+[run] 20260329-0359-C-500-05
+[done] Day 2 batch complete. Artifacts: /Users/sultansakyp/research/fintech-microservices/artifacts/runs

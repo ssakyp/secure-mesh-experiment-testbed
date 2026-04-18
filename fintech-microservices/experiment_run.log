@@ -1,0 +1,899 @@
+[1/7] Building and loading Polyglot Docker images...
+This step will compile the Go, Python, and Java services. It may take 5-10 minutes.
+Building api-gateway...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 248B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:latest
+#2 ...
+
+#3 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#3 DONE 1.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:latest
+#2 DONE 1.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [stage-1 1/3] FROM docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
+#5 resolve docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659 0.0s done
+#5 DONE 0.0s
+
+#6 [builder 1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#6 resolve docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 84B done
+#7 DONE 0.0s
+
+#8 [stage-1 2/3] WORKDIR /app
+#8 CACHED
+
+#9 [builder 2/4] WORKDIR /app
+#9 CACHED
+
+#10 [builder 3/4] COPY . .
+#10 CACHED
+
+#11 [builder 4/4] RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o main .
+#11 CACHED
+
+#12 [stage-1 3/3] COPY --from=builder /app/main .
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:8a952cd265033849bcfa6fe5705aae717387591e133349795b0a098c8d40d298 done
+#13 exporting config sha256:f042a99398af64e242798c0d3d8490f4c46208cbfc4e8d1a8c27fa4ddc195e23 done
+#13 exporting attestation manifest sha256:5e3075305e12f703b911b8d07d7a829b8e83f3b72c3b48eb8ac5b75312e35fc1 0.0s done
+#13 exporting manifest list sha256:ef6fe0a8bd6de71ecaf6f1c48a96db4f3cde3962105d64cb9bc1ee14c6dcdabf done
+#13 naming to localhost:5000/fintech/api-gateway:latest done
+#13 unpacking to localhost:5000/fintech/api-gateway:latest done
+#13 DONE 0.0s
+Building auth-service...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 248B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 ...
+
+#3 [internal] load metadata for docker.io/library/alpine:latest
+#3 DONE 0.4s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [stage-1 1/3] FROM docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
+#5 resolve docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659 0.0s done
+#5 DONE 0.0s
+
+#6 [builder 1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#6 resolve docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 84B done
+#7 DONE 0.0s
+
+#8 [builder 2/4] WORKDIR /app
+#8 CACHED
+
+#9 [builder 4/4] RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o main .
+#9 CACHED
+
+#10 [builder 3/4] COPY . .
+#10 CACHED
+
+#11 [stage-1 2/3] WORKDIR /app
+#11 CACHED
+
+#12 [stage-1 3/3] COPY --from=builder /app/main .
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:c1d0f3e8089309f1ff7abed0a49df995edfbd9a9ed689f9bf20ca32f64ea80be done
+#13 exporting config sha256:cfafec31381ff7d3b2cd7837ccb28534d799da696906cc2aa043e4ab5150338e done
+#13 exporting attestation manifest sha256:cea2695b1a12eccc5f0bc2df35285f9f773a9f9152eb8652e6bbc00b45991ac1 0.0s done
+#13 exporting manifest list sha256:f480d53fa42a147c4e4f7b107dac20cfdd74149ded6e985fb5005b3dcba2007f done
+#13 naming to localhost:5000/fintech/auth-service:latest done
+#13 unpacking to localhost:5000/fintech/auth-service:latest done
+#13 DONE 0.0s
+Building transaction-service...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 248B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.4s
+
+#3 [internal] load metadata for docker.io/library/alpine:latest
+#3 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#5 resolve docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94 0.0s done
+#5 DONE 0.0s
+
+#6 [stage-1 1/3] FROM docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
+#6 resolve docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 84B done
+#7 DONE 0.0s
+
+#8 [builder 2/4] WORKDIR /app
+#8 CACHED
+
+#9 [builder 3/4] COPY . .
+#9 CACHED
+
+#10 [stage-1 2/3] WORKDIR /app
+#10 CACHED
+
+#11 [builder 4/4] RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o main .
+#11 CACHED
+
+#12 [stage-1 3/3] COPY --from=builder /app/main .
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:31c70cffbdf465edcd488b171d9a3a8acf99ea5d11f71235693f4b047e7b1899 done
+#13 exporting config sha256:da173aed6b37715c69706cb32c1e8a7cf62ea0c83096ae1f265a72376f50fb47 done
+#13 exporting attestation manifest sha256:a7c9fc35f1bc2ff767160ace1cde735d3985ff7c8031ff2e4a4756907e498e01 0.0s done
+#13 exporting manifest list sha256:6233071c1bd5a6a541689051ace50fa3f4c860affccf588093c83b266a29afa9 done
+#13 naming to localhost:5000/fintech/transaction-service:latest done
+#13 unpacking to localhost:5000/fintech/transaction-service:latest done
+#13 DONE 0.0s
+Building audit-service...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 248B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 ...
+
+#3 [internal] load metadata for docker.io/library/alpine:latest
+#3 DONE 0.6s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.6s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#5 resolve docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94 0.0s done
+#5 DONE 0.0s
+
+#6 [stage-1 1/3] FROM docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
+#6 resolve docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 84B done
+#7 DONE 0.0s
+
+#8 [stage-1 2/3] WORKDIR /app
+#8 CACHED
+
+#9 [builder 2/4] WORKDIR /app
+#9 CACHED
+
+#10 [builder 3/4] COPY . .
+#10 CACHED
+
+#11 [builder 4/4] RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o main .
+#11 CACHED
+
+#12 [stage-1 3/3] COPY --from=builder /app/main .
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:1383c9fb129e4004552d3a8280cf104c039e189f65ac4598f85ce7e9f3bb5bb5 done
+#13 exporting config sha256:c62c4f0ee3af7e8c2085e4f897a9c8bf8cb653e5def5b1fdfb8b3f0681831966 done
+#13 exporting attestation manifest sha256:591dbb93328bfc9b6c04a5fa65e2ef6406fb1e0b6b2a859e7e1209e61286fd1a done
+#13 exporting manifest list sha256:769c4f3c6f3c70955646e676fa426d948d027c21574e257a388457e83419c4c7 done
+#13 naming to localhost:5000/fintech/audit-service:latest done
+#13 unpacking to localhost:5000/fintech/audit-service:latest done
+#13 DONE 0.0s
+Building currency-exchange...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 248B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.4s
+
+#3 [internal] load metadata for docker.io/library/alpine:latest
+#3 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#5 resolve docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94 0.0s done
+#5 DONE 0.0s
+
+#6 [stage-1 1/3] FROM docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
+#6 resolve docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 84B done
+#7 DONE 0.0s
+
+#8 [builder 4/4] RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o main .
+#8 CACHED
+
+#9 [builder 3/4] COPY . .
+#9 CACHED
+
+#10 [stage-1 2/3] WORKDIR /app
+#10 CACHED
+
+#11 [builder 2/4] WORKDIR /app
+#11 CACHED
+
+#12 [stage-1 3/3] COPY --from=builder /app/main .
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:7baaaa523b493ceb86ea7ded6652e1c7037673daf4950c946c17dfff57f17066 done
+#13 exporting config sha256:c5831fc25a720d92fbf2cec83e2eb00c9be91a51f852833c743f9477a3cc9842 done
+#13 exporting attestation manifest sha256:41a4cb5a05b45e9be210f459d980f9a2a024482ff032b65e9df093c369366a5d 0.0s done
+#13 exporting manifest list sha256:5c7b45c19a1e79d0c09d911d84336596a4c5880c231e586433b7338d3f714dd6 done
+#13 naming to localhost:5000/fintech/currency-exchange:latest done
+#13 unpacking to localhost:5000/fintech/currency-exchange:latest done
+#13 DONE 0.0s
+Building user-profile...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 237B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 93B done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634
+#5 resolve docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634 done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#7 CACHED
+
+#8 [3/5] COPY requirements.txt .
+#8 CACHED
+
+#9 [5/5] COPY . .
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 exporting manifest sha256:6e141a4bce33146eb3b6287294f92873c440419a66d7485ed2a04ece88d585b5 done
+#10 exporting config sha256:8242b96d0e389f0946cd13f43121bb408a13f010d63a4f44db7c729bebab8768 done
+#10 exporting attestation manifest sha256:2879a00e76a14ff3d2ce507c1bd04fac802595db61dd46a23036e55ce96fb95d done
+#10 exporting manifest list sha256:143fe06cff660e81dfa3a919c36da82435e45d9da849b5333d43b92805ab3d7e done
+#10 naming to localhost:5000/fintech/user-profile:latest done
+#10 unpacking to localhost:5000/fintech/user-profile:latest done
+#10 DONE 0.0s
+Building notification-service...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 237B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 94B done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634
+#5 resolve docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634 done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#7 CACHED
+
+#8 [3/5] COPY requirements.txt .
+#8 CACHED
+
+#9 [5/5] COPY . .
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 exporting manifest sha256:aa36e49d59646207432c4337c02bad88842aee003af8e8b0b480e983c16d611f done
+#10 exporting config sha256:12d85a8ab60f813f8998a1687fcc23c9a17ebfdb0e83434f0a340243e6a87ba1 done
+#10 exporting attestation manifest sha256:b840b06cbff138edef99c2ba7f6f8bd97060354b460f5db6041099510bf18580 done
+#10 exporting manifest list sha256:fcb7f6ce4e20a464c9add23b5f97e5623724ce3d02e1f39a4c31ea51800901b3 done
+#10 naming to localhost:5000/fintech/notification-service:latest done
+#10 unpacking to localhost:5000/fintech/notification-service:latest done
+#10 DONE 0.0s
+Building fraud-analytics...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 237B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 94B done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634
+#5 resolve docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634 done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [3/5] COPY requirements.txt .
+#7 CACHED
+
+#8 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#8 CACHED
+
+#9 [5/5] COPY . .
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 exporting manifest sha256:38772a698f0276a88ebab88007119e90a0a229481b58c3ff78df2d5fc927e0b3 done
+#10 exporting config sha256:edd08a061d60100ab86fa2edcbfbc58da086466983075ce0b69188e0e1452150 done
+#10 exporting attestation manifest sha256:1f5c1a08b22a9de5eef407f3b46a85390e0c331e6743445c3fea7a83d5b47e79 done
+#10 exporting manifest list sha256:2ef5a35849fa54f069ad92306f82d50234288f973505b530510feb463abc3e72 done
+#10 naming to localhost:5000/fintech/fraud-analytics:latest done
+#10 unpacking to localhost:5000/fintech/fraud-analytics:latest done
+#10 DONE 0.0s
+Building reporting-service...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 237B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 94B done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634
+#5 resolve docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634 done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [3/5] COPY requirements.txt .
+#7 CACHED
+
+#8 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#8 CACHED
+
+#9 [5/5] COPY . .
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 exporting manifest sha256:385191f6daced2bbe5c0553b8286fbae85fc485fb1f07b68a630df4ade9d8a4e done
+#10 exporting config sha256:57cbf37abd904c62f5d106e8f27ff4623190a2ff1f3dba6ea76ae3a310304ccd done
+#10 exporting attestation manifest sha256:07162954c005e021f1e0e55072e95edf750941cfb9088d1b0fef517537c99fb2 done
+#10 exporting manifest list sha256:94c8008a7d17ff80ae815b5f6879a156089e51c8f0a1b1c3200c6ea7069352cb done
+#10 naming to localhost:5000/fintech/reporting-service:latest done
+#10 unpacking to localhost:5000/fintech/reporting-service:latest done
+#10 DONE 0.0s
+Building account-service...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 328B done
+#1 DONE 0.0s
+
+#2 [auth] library/maven:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/maven:3.9-eclipse-temurin-17-focal
+#3 ...
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre-focal
+#4 DONE 0.8s
+
+#3 [internal] load metadata for docker.io/library/maven:3.9-eclipse-temurin-17-focal
+#3 DONE 1.4s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/3] FROM docker.io/library/eclipse-temurin:17-jre-focal@sha256:d7ec0d23cc1675eb16a266af1d4f5d41db60260af3fcd81c42de2e6ed3dc4dba
+#6 resolve docker.io/library/eclipse-temurin:17-jre-focal@sha256:d7ec0d23cc1675eb16a266af1d4f5d41db60260af3fcd81c42de2e6ed3dc4dba done
+#6 DONE 0.0s
+
+#7 [builder 1/4] FROM docker.io/library/maven:3.9-eclipse-temurin-17-focal@sha256:45ddc84a2e7f75ab7faf290085a0292dd8adc5e7674a89231f6a879b60f4358d
+#7 resolve docker.io/library/maven:3.9-eclipse-temurin-17-focal@sha256:45ddc84a2e7f75ab7faf290085a0292dd8adc5e7674a89231f6a879b60f4358d 0.0s done
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 362B done
+#8 DONE 0.0s
+
+#9 [builder 2/4] WORKDIR /app
+#9 CACHED
+
+#10 [builder 3/4] COPY . .
+#10 CACHED
+
+#11 [stage-1 2/3] WORKDIR /app
+#11 CACHED
+
+#12 [builder 4/4] RUN mvn clean package -DskipTests || mvn clean package -DskipTests
+#12 CACHED
+
+#13 [stage-1 3/3] COPY --from=builder /app/target/*.jar app.jar
+#13 CACHED
+
+#14 exporting to image
+#14 exporting layers done
+#14 exporting manifest sha256:3c6b0c58718ab1849cb633d1fd287013f268d66fcddbe55075e34ac973fd6503 done
+#14 exporting config sha256:5f1f65f6cc1bb6929dcb9745e464b3dbebf5c97bd5d717c55e1ec6d82088b9fc done
+#14 exporting attestation manifest sha256:c0d150c66ade643383454410b8d6a6846700f2095d8e17676049d9b86424fed1 done
+#14 exporting manifest list sha256:9be05e977a91b810469ff2d5dd076b72af4969d3575b11d79a3d8742316df3d0 done
+#14 naming to localhost:5000/fintech/account-service:latest done
+#14 unpacking to localhost:5000/fintech/account-service:latest done
+#14 DONE 0.0s
+Building ledger-service...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 328B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/maven:3.9-eclipse-temurin-17-focal
+#2 ...
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre-focal
+#3 DONE 0.4s
+
+#2 [internal] load metadata for docker.io/library/maven:3.9-eclipse-temurin-17-focal
+#2 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [stage-1 1/3] FROM docker.io/library/eclipse-temurin:17-jre-focal@sha256:d7ec0d23cc1675eb16a266af1d4f5d41db60260af3fcd81c42de2e6ed3dc4dba
+#5 resolve docker.io/library/eclipse-temurin:17-jre-focal@sha256:d7ec0d23cc1675eb16a266af1d4f5d41db60260af3fcd81c42de2e6ed3dc4dba 0.0s done
+#5 DONE 0.0s
+
+#6 [builder 1/4] FROM docker.io/library/maven:3.9-eclipse-temurin-17-focal@sha256:45ddc84a2e7f75ab7faf290085a0292dd8adc5e7674a89231f6a879b60f4358d
+#6 resolve docker.io/library/maven:3.9-eclipse-temurin-17-focal@sha256:45ddc84a2e7f75ab7faf290085a0292dd8adc5e7674a89231f6a879b60f4358d 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 420B done
+#7 DONE 0.0s
+
+#8 [stage-1 2/3] WORKDIR /app
+#8 CACHED
+
+#9 [builder 3/4] COPY . .
+#9 CACHED
+
+#10 [builder 4/4] RUN mvn clean package -DskipTests || mvn clean package -DskipTests
+#10 CACHED
+
+#11 [builder 2/4] WORKDIR /app
+#11 CACHED
+
+#12 [stage-1 3/3] COPY --from=builder /app/target/*.jar app.jar
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:70a7ce08dd1bf1931d765ecd8f425301c19d8aa8be6051ad5a5199bc592c4661 done
+#13 exporting config sha256:0fb25808737852a4fff14f2c302a98c2334555712cd6484377d526ff4999ddf9 done
+#13 exporting attestation manifest sha256:7b0293f17b58f8ff0968882bf9962c20d81b42b222aa3ad2b7d222a7a1f17b67 done
+#13 exporting manifest list sha256:b527dd96a48814c87991b360c386683c5fac3be9add44e3c36eaa7fa13699636 done
+#13 naming to localhost:5000/fintech/ledger-service:latest done
+#13 unpacking to localhost:5000/fintech/ledger-service:latest done
+#13 DONE 0.0s
+Building card-management...
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 328B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/maven:3.9-eclipse-temurin-17-focal
+#2 ...
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre-focal
+#3 DONE 0.4s
+
+#2 [internal] load metadata for docker.io/library/maven:3.9-eclipse-temurin-17-focal
+#2 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [stage-1 1/3] FROM docker.io/library/eclipse-temurin:17-jre-focal@sha256:d7ec0d23cc1675eb16a266af1d4f5d41db60260af3fcd81c42de2e6ed3dc4dba
+#5 resolve docker.io/library/eclipse-temurin:17-jre-focal@sha256:d7ec0d23cc1675eb16a266af1d4f5d41db60260af3fcd81c42de2e6ed3dc4dba done
+#5 DONE 0.0s
+
+#6 [builder 1/4] FROM docker.io/library/maven:3.9-eclipse-temurin-17-focal@sha256:45ddc84a2e7f75ab7faf290085a0292dd8adc5e7674a89231f6a879b60f4358d
+#6 resolve docker.io/library/maven:3.9-eclipse-temurin-17-focal@sha256:45ddc84a2e7f75ab7faf290085a0292dd8adc5e7674a89231f6a879b60f4358d 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 423B done
+#7 DONE 0.0s
+
+#8 [builder 3/4] COPY . .
+#8 CACHED
+
+#9 [builder 4/4] RUN mvn clean package -DskipTests || mvn clean package -DskipTests
+#9 CACHED
+
+#10 [stage-1 2/3] WORKDIR /app
+#10 CACHED
+
+#11 [builder 2/4] WORKDIR /app
+#11 CACHED
+
+#12 [stage-1 3/3] COPY --from=builder /app/target/*.jar app.jar
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:e44cea7fa00361df715911b832946a8f4ed33116ec9aeae28e74737f8bea1fe6 done
+#13 exporting config sha256:28db7ad03862b98b406667fa8d39fb3e6bf8206aea2348915cda9113b7af310c done
+#13 exporting attestation manifest sha256:4c76e55ac2c3f5774c804975584e2f598434db4c14f81f192b5a45634ae072c3 done
+#13 exporting manifest list sha256:d614ae9da40c529d67160981483a1151ae630c1896b5b82d28d4288360ff31c9 done
+#13 naming to localhost:5000/fintech/card-management:latest done
+#13 unpacking to localhost:5000/fintech/card-management:latest done
+#13 DONE 0.0s
+Importing api-gateway to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0001] Importing images into nodes...               
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143446.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143446.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143446.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143446.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143446.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0002] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0003] Removing k3d-tools node...                   
+[36mINFO[0m[0003] Successfully imported image(s)               
+[36mINFO[0m[0003] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing auth-service to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0001] Importing images into nodes...               
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143449.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143449.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143449.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143449.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143449.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0002] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0003] Removing k3d-tools node...                   
+[36mINFO[0m[0003] Successfully imported image(s)               
+[36mINFO[0m[0003] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing transaction-service to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0001] Importing images into nodes...               
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143453.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143453.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143453.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143453.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143453.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0002] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0003] Removing k3d-tools node...                   
+[36mINFO[0m[0003] Successfully imported image(s)               
+[36mINFO[0m[0003] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing audit-service to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0001] Importing images into nodes...               
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143456.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143456.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143456.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143456.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143456.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0002] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0003] Removing k3d-tools node...                   
+[36mINFO[0m[0003] Successfully imported image(s)               
+[36mINFO[0m[0003] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing currency-exchange to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0001] Importing images into nodes...               
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143500.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143500.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143500.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143500.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143500.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0002] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0003] Removing k3d-tools node...                   
+[36mINFO[0m[0003] Successfully imported image(s)               
+[36mINFO[0m[0003] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing user-profile to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0001] Importing images into nodes...               
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143503.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143503.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143503.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143503.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143503.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0003] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0004] Removing k3d-tools node...                   
+[36mINFO[0m[0004] Successfully imported image(s)               
+[36mINFO[0m[0004] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing notification-service to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0001] Importing images into nodes...               
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143508.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143508.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143508.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143508.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143508.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0002] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0003] Removing k3d-tools node...                   
+[36mINFO[0m[0003] Successfully imported image(s)               
+[36mINFO[0m[0003] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing fraud-analytics to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0001] Importing images into nodes...               
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143511.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143511.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143511.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143511.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143511.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0002] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0003] Removing k3d-tools node...                   
+[36mINFO[0m[0003] Successfully imported image(s)               
+[36mINFO[0m[0003] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing reporting-service to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0001] Importing images into nodes...               
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143515.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143515.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143515.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143515.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0001] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143515.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0003] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0004] Removing k3d-tools node...                   
+[36mINFO[0m[0004] Successfully imported image(s)               
+[36mINFO[0m[0004] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing account-service to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0002] Importing images into nodes...               
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143519.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143519.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143519.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143519.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143519.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0005] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0006] Removing k3d-tools node...                   
+[36mINFO[0m[0006] Successfully imported image(s)               
+[36mINFO[0m[0006] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing ledger-service to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0002] Importing images into nodes...               
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143526.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143526.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143526.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143526.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143526.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0004] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0005] Removing k3d-tools node...                   
+[36mINFO[0m[0005] Successfully imported image(s)               
+[36mINFO[0m[0005] Successfully imported 1 image(s) into 1 cluster(s) 
+Importing card-management to k3d cluster...
+[36mINFO[0m[0000] Importing image(s) into cluster 'research-cluster' 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-research-cluster-tools'   
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0002] Importing images into nodes...               
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143531.tar' into node 'k3d-research-cluster-server-0'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143531.tar' into node 'k3d-research-cluster-agent-2'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143531.tar' into node 'k3d-research-cluster-agent-1'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143531.tar' into node 'k3d-research-cluster-agent-0'... 
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-research-cluster-images-20260329143531.tar' into node 'k3d-research-cluster-agent-3'... 
+[36mINFO[0m[0004] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0005] Removing k3d-tools node...                   
+[36mINFO[0m[0005] Successfully imported image(s)               
+[36mINFO[0m[0005] Successfully imported 1 image(s) into 1 cluster(s) 
+[2/7] Deploying Baseline Architecture & Observability Tools...
+deployment.apps/api-gateway created
+service/api-gateway created
+deployment.apps/auth-service created
+service/auth-service created
+deployment.apps/transaction-service created
+service/transaction-service created
+deployment.apps/audit-service created
+service/audit-service created
+deployment.apps/currency-exchange created
+service/currency-exchange created
+deployment.apps/user-profile created
+service/user-profile created
+deployment.apps/notification-service created
+service/notification-service created
+deployment.apps/fraud-analytics created
+service/fraud-analytics created
+deployment.apps/reporting-service created
+service/reporting-service created
+deployment.apps/account-service created
+service/account-service created
+deployment.apps/ledger-service created
+service/ledger-service created
+deployment.apps/card-management created
+service/card-management created
+gateway.networking.istio.io/fintech-gateway created
+virtualservice.networking.istio.io/api-gateway-vs created
+serviceaccount/prometheus created
+configmap/prometheus created
+clusterrole.rbac.authorization.k8s.io/prometheus created
+clusterrolebinding.rbac.authorization.k8s.io/prometheus created
+service/prometheus created
+deployment.apps/prometheus created
+serviceaccount/grafana created
+configmap/grafana created
+service/grafana created
+deployment.apps/grafana created
+configmap/istio-grafana-dashboards created
+configmap/istio-services-grafana-dashboards created
+Waiting for all pods to become ready...
+pod/account-service-844f794748-jblms condition met
+pod/api-gateway-659986599d-bpzb9 condition met
+pod/audit-service-79bf45bb6d-ftxb5 condition met
+pod/auth-service-6cb5b4799-qsb94 condition met
+pod/card-management-fbfcf657c-df5qn condition met
+pod/currency-exchange-654f59674b-bgfqz condition met
+pod/fraud-analytics-f95986d5d-l52pf condition met
+pod/ledger-service-7d8c948444-j6gp9 condition met
+pod/notification-service-5d4f7d798-zm2gd condition met
+pod/reporting-service-55f8df976c-rtlck condition met
+pod/transaction-service-7949568b65-b8slk condition met
+pod/user-profile-67c97bd484-c6n8n condition met
+[3/7] Running Load Test: Scenario A (Baseline)...
+[4/7] Deploying Scenario B (JWT Authentication)...
+requestauthentication.security.istio.io/jwt-auth created
+authorizationpolicy.security.istio.io/require-jwt created
+Fetching sample valid JWT...
+Running Load Test: Scenario B (JWT)...
+[5/7] Deploying Scenario C (Strict mTLS + Zero-Trust Authorization)...
+peerauthentication.security.istio.io/default created
+authorizationpolicy.security.istio.io/allow-nothing-by-default created
+authorizationpolicy.security.istio.io/allow-gateway-ingress created
+authorizationpolicy.security.istio.io/api-gateway-to-internal created
+authorizationpolicy.security.istio.io/api-gateway-to-transaction created
+authorizationpolicy.security.istio.io/transaction-to-fraud created
+authorizationpolicy.security.istio.io/transaction-to-account created
+Running Load Test: Scenario C (mTLS)...
+[6/7] Extracting Final Resource Overhead Metrics (CPU/RAM)...
+[7/7] Automation complete! Cleaning up local system resources...
+Destroying k3d local cluster to preserve memory...
+[36mINFO[0m[0000] Deleting cluster 'research-cluster'          
+[36mINFO[0m[0005] Deleting cluster network 'k3d-research-cluster' 
+[36mINFO[0m[0005] Deleting 1 attached volumes...               
+[36mINFO[0m[0005] Removing cluster details from default kubeconfig... 
+[36mINFO[0m[0005] Removing standalone kubeconfig file (if there is one)... 
+[36mINFO[0m[0005] Successfully deleted cluster research-cluster! 
+Shutting down the Colima Docker Daemon...
+time="2026-03-29T14:39:54+05:00" level=info msg="stopping colima"
+time="2026-03-29T14:39:54+05:00" level=info msg="stopping ..." context=docker
+Stopping 'docker.service', but its triggering units are still active:
+docker.socket
+colima
+time="2026-03-29T14:39:55+05:00" level=info msg="stopping ..." context=vm
+time="2026-03-29T14:39:56+05:00" level=info msg="Sending SIGINT to hostagent process 80936"
+time="2026-03-29T14:39:56+05:00" level=info msg="Waiting for the host agent and the driver processes to shut down"
+time="2026-03-29T14:39:56+05:00" level=info msg="[hostagent] Received SIGINT, shutting down the host agent"
+time="2026-03-29T14:39:56+05:00" level=info msg="[hostagent] Shutting down the host agent"
+time="2026-03-29T14:39:56+05:00" level=info msg="[hostagent] Stopping forwarding \"/var/run/docker.sock\" (guest) to \"/Users/sultansakyp/.colima/default/docker.sock\" (host)"
+time="2026-03-29T14:39:56+05:00" level=info msg="[hostagent] Stopping forwarding \"/var/run/containerd/containerd.sock\" (guest) to \"/Users/sultansakyp/.colima/default/containerd.sock\" (host)"
+time="2026-03-29T14:39:56+05:00" level=info msg="[hostagent] Stopping forwarding \"/var/run/docker.sock\" (guest) to \"/Users/sultansakyp/.colima/docker.sock\" (host)"
+time="2026-03-29T14:39:56+05:00" level=info msg="[hostagent] Unmounting disk \"colima\""
+time="2026-03-29T14:39:57+05:00" level=info msg="[hostagent] Shutting down VZ"
+time="2026-03-29T14:39:57+05:00" level=info msg="[hostagent] [VZ] - vm state change: stopped"
+time="2026-03-29T14:39:58+05:00" level=info msg="Waiting for the instance to shut down"
+time="2026-03-29T14:39:58+05:00" level=info msg="The instance colima has shut down"
+time="2026-03-29T14:39:59+05:00" level=info msg=done
+===================================================================
+Experiment Sequence Finished! The background apps have been closed.
+Your results are stored in: /Users/sultansakyp/research/fintech-microservices/results/
+===================================================================

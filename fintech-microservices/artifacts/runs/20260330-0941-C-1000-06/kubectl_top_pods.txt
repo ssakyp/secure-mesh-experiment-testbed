@@ -1,0 +1,13 @@
+NAME                                   CPU(cores)   MEMORY(bytes)   
+account-service-844f794748-gslpt       199m         290Mi           
+api-gateway-659986599d-4pzsd           473m         317Mi           
+audit-service-79bf45bb6d-zlggx         5m           37Mi            
+auth-service-6cb5b4799-9sc76           127m         82Mi            
+card-management-fbfcf657c-p52fq        11m          131Mi           
+currency-exchange-654f59674b-bfczm     6m           37Mi            
+fraud-analytics-f95986d5d-77tnt        307m         177Mi           
+ledger-service-7d8c948444-m7rvd        10m          135Mi           
+notification-service-5d4f7d798-78jzg   7m           67Mi            
+reporting-service-55f8df976c-pj7qx     5m           68Mi            
+transaction-service-7949568b65-sv5rv   525m         308Mi           
+user-profile-67c97bd484-fwfxv          8m           68Mi            

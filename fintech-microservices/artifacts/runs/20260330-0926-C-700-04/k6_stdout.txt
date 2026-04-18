@@ -1,0 +1,467 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /Users/sultansakyp/research/fintech-microservices/k6-tests/fintech_load_test.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 700 max VUs, 1m30s max duration (incl. graceful stop):
+              * default: 700 looping VUs for 1m0s (gracefulStop: 30s)
+
+
+running (0m01.0s), 700/700 VUs, 0 complete and 0 interrupted iterations
+default   [   2% ] 700 VUs  0m01.0s/1m0s
+
+running (0m02.0s), 700/700 VUs, 60 complete and 0 interrupted iterations
+default   [   3% ] 700 VUs  0m02.0s/1m0s
+
+running (0m03.0s), 700/700 VUs, 223 complete and 0 interrupted iterations
+default   [   5% ] 700 VUs  0m03.0s/1m0s
+
+running (0m04.0s), 700/700 VUs, 374 complete and 0 interrupted iterations
+default   [   7% ] 700 VUs  0m04.0s/1m0s
+
+running (0m05.0s), 700/700 VUs, 616 complete and 0 interrupted iterations
+default   [   8% ] 700 VUs  0m05.0s/1m0s
+
+running (0m06.0s), 700/700 VUs, 889 complete and 0 interrupted iterations
+default   [  10% ] 700 VUs  0m06.0s/1m0s
+
+running (0m07.0s), 700/700 VUs, 1221 complete and 0 interrupted iterations
+default   [  12% ] 700 VUs  0m07.0s/1m0s
+
+running (0m08.0s), 700/700 VUs, 1371 complete and 0 interrupted iterations
+default   [  13% ] 700 VUs  0m08.0s/1m0s
+
+running (0m09.0s), 700/700 VUs, 1527 complete and 0 interrupted iterations
+default   [  15% ] 700 VUs  0m09.0s/1m0s
+
+running (0m10.0s), 700/700 VUs, 1770 complete and 0 interrupted iterations
+default   [  17% ] 700 VUs  0m10.0s/1m0s
+
+running (0m11.0s), 700/700 VUs, 1898 complete and 0 interrupted iterations
+default   [  18% ] 700 VUs  0m11.0s/1m0s
+
+running (0m12.0s), 700/700 VUs, 2096 complete and 0 interrupted iterations
+default   [  20% ] 700 VUs  0m12.0s/1m0s
+
+running (0m13.0s), 700/700 VUs, 2410 complete and 0 interrupted iterations
+default   [  22% ] 700 VUs  0m13.0s/1m0s
+
+running (0m14.0s), 700/700 VUs, 2436 complete and 0 interrupted iterations
+default   [  23% ] 700 VUs  0m14.0s/1m0s
+
+running (0m15.0s), 700/700 VUs, 2474 complete and 0 interrupted iterations
+default   [  25% ] 700 VUs  0m15.0s/1m0s
+
+running (0m16.0s), 700/700 VUs, 2480 complete and 0 interrupted iterations
+default   [  27% ] 700 VUs  0m16.0s/1m0s
+
+running (0m17.0s), 700/700 VUs, 2546 complete and 0 interrupted iterations
+default   [  28% ] 700 VUs  0m17.0s/1m0s
+
+running (0m18.0s), 700/700 VUs, 2645 complete and 0 interrupted iterations
+default   [  30% ] 700 VUs  0m18.0s/1m0s
+
+running (0m19.0s), 700/700 VUs, 2657 complete and 0 interrupted iterations
+default   [  32% ] 700 VUs  0m19.0s/1m0s
+
+running (0m20.0s), 700/700 VUs, 2657 complete and 0 interrupted iterations
+default   [  33% ] 700 VUs  0m20.0s/1m0s
+
+running (0m21.0s), 700/700 VUs, 2677 complete and 0 interrupted iterations
+default   [  35% ] 700 VUs  0m21.0s/1m0s
+
+running (0m22.0s), 700/700 VUs, 2682 complete and 0 interrupted iterations
+default   [  37% ] 700 VUs  0m22.0s/1m0s
+
+running (0m23.0s), 700/700 VUs, 2682 complete and 0 interrupted iterations
+default   [  38% ] 700 VUs  0m23.0s/1m0s
+
+running (0m24.0s), 700/700 VUs, 2687 complete and 0 interrupted iterations
+default   [  40% ] 700 VUs  0m24.0s/1m0s
+
+running (0m25.0s), 700/700 VUs, 2687 complete and 0 interrupted iterations
+default   [  42% ] 700 VUs  0m25.0s/1m0s
+
+running (0m26.0s), 700/700 VUs, 2687 complete and 0 interrupted iterations
+default   [  43% ] 700 VUs  0m26.0s/1m0s
+
+running (0m27.0s), 700/700 VUs, 2693 complete and 0 interrupted iterations
+default   [  45% ] 700 VUs  0m27.0s/1m0s
+
+running (0m28.0s), 700/700 VUs, 2702 complete and 0 interrupted iterations
+default   [  47% ] 700 VUs  0m28.0s/1m0s
+
+running (0m29.0s), 700/700 VUs, 2752 complete and 0 interrupted iterations
+default   [  48% ] 700 VUs  0m29.0s/1m0s
+
+running (0m30.0s), 700/700 VUs, 3025 complete and 0 interrupted iterations
+default   [  50% ] 700 VUs  0m30.0s/1m0s
+
+running (0m31.0s), 700/700 VUs, 3137 complete and 0 interrupted iterations
+default   [  52% ] 700 VUs  0m31.0s/1m0s
+
+running (0m32.0s), 700/700 VUs, 3167 complete and 0 interrupted iterations
+default   [  53% ] 700 VUs  0m32.0s/1m0s
+
+running (0m33.0s), 700/700 VUs, 3175 complete and 0 interrupted iterations
+default   [  55% ] 700 VUs  0m33.0s/1m0s
+
+running (0m34.0s), 700/700 VUs, 3235 complete and 0 interrupted iterations
+default   [  57% ] 700 VUs  0m34.0s/1m0s
+
+running (0m35.0s), 700/700 VUs, 3243 complete and 0 interrupted iterations
+default   [  58% ] 700 VUs  0m35.0s/1m0s
+
+running (0m36.0s), 700/700 VUs, 3310 complete and 0 interrupted iterations
+default   [  60% ] 700 VUs  0m36.0s/1m0s
+
+running (0m37.0s), 700/700 VUs, 3311 complete and 0 interrupted iterations
+default   [  62% ] 700 VUs  0m37.0s/1m0s
+
+running (0m38.0s), 700/700 VUs, 3311 complete and 0 interrupted iterations
+default   [  63% ] 700 VUs  0m38.0s/1m0s
+
+running (0m39.0s), 700/700 VUs, 3311 complete and 0 interrupted iterations
+default   [  65% ] 700 VUs  0m39.0s/1m0s
+
+running (0m40.0s), 700/700 VUs, 3311 complete and 0 interrupted iterations
+default   [  67% ] 700 VUs  0m40.0s/1m0s
+
+running (0m41.0s), 700/700 VUs, 3311 complete and 0 interrupted iterations
+default   [  68% ] 700 VUs  0m41.0s/1m0s
+
+running (0m42.0s), 700/700 VUs, 3317 complete and 0 interrupted iterations
+default   [  70% ] 700 VUs  0m42.0s/1m0s
+
+running (0m43.0s), 700/700 VUs, 3319 complete and 0 interrupted iterations
+default   [  72% ] 700 VUs  0m43.0s/1m0s
+
+running (0m44.0s), 700/700 VUs, 3321 complete and 0 interrupted iterations
+default   [  73% ] 700 VUs  0m44.0s/1m0s
+
+running (0m45.0s), 700/700 VUs, 3326 complete and 0 interrupted iterations
+default   [  75% ] 700 VUs  0m45.0s/1m0s
+
+running (0m46.0s), 700/700 VUs, 3329 complete and 0 interrupted iterations
+default   [  77% ] 700 VUs  0m46.0s/1m0s
+
+running (0m47.0s), 700/700 VUs, 3332 complete and 0 interrupted iterations
+default   [  78% ] 700 VUs  0m47.0s/1m0s
+
+running (0m48.0s), 700/700 VUs, 3332 complete and 0 interrupted iterations
+default   [  80% ] 700 VUs  0m48.0s/1m0s
+
+running (0m49.0s), 700/700 VUs, 3334 complete and 0 interrupted iterations
+default   [  82% ] 700 VUs  0m49.0s/1m0s
+
+running (0m50.0s), 700/700 VUs, 3334 complete and 0 interrupted iterations
+default   [  83% ] 700 VUs  0m50.0s/1m0s
+
+running (0m51.0s), 700/700 VUs, 3334 complete and 0 interrupted iterations
+default   [  85% ] 700 VUs  0m51.0s/1m0s
+
+running (0m52.0s), 700/700 VUs, 3349 complete and 0 interrupted iterations
+default   [  87% ] 700 VUs  0m52.0s/1m0s
+
+running (0m53.0s), 700/700 VUs, 3350 complete and 0 interrupted iterations
+default   [  88% ] 700 VUs  0m53.0s/1m0s
+
+running (0m54.0s), 700/700 VUs, 3368 complete and 0 interrupted iterations
+default   [  90% ] 700 VUs  0m54.0s/1m0s
+
+running (0m55.0s), 700/700 VUs, 3417 complete and 0 interrupted iterations
+default   [  92% ] 700 VUs  0m55.0s/1m0s
+
+running (0m56.0s), 700/700 VUs, 3463 complete and 0 interrupted iterations
+default   [  93% ] 700 VUs  0m56.0s/1m0s
+
+running (0m57.0s), 700/700 VUs, 3479 complete and 0 interrupted iterations
+default   [  95% ] 700 VUs  0m57.0s/1m0s
+
+running (0m58.0s), 700/700 VUs, 3499 complete and 0 interrupted iterations
+default   [  97% ] 700 VUs  0m58.0s/1m0s
+
+running (0m59.0s), 700/700 VUs, 3533 complete and 0 interrupted iterations
+default   [  98% ] 700 VUs  0m59.0s/1m0s
+
+running (1m00.0s), 700/700 VUs, 3585 complete and 0 interrupted iterations
+default   [ 100% ] 700 VUs  1m00.0s/1m0s
+
+running (1m01.0s), 690/700 VUs, 3597 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m02.0s), 680/700 VUs, 3607 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m03.0s), 678/700 VUs, 3609 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m04.0s), 678/700 VUs, 3609 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m05.0s), 678/700 VUs, 3609 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m06.0s), 677/700 VUs, 3610 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m07.0s), 674/700 VUs, 3613 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m08.0s), 674/700 VUs, 3613 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m09.0s), 670/700 VUs, 3617 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m10.0s), 658/700 VUs, 3629 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m11.0s), 656/700 VUs, 3631 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m12.0s), 656/700 VUs, 3631 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m13.0s), 656/700 VUs, 3631 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m14.0s), 653/700 VUs, 3634 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m15.0s), 651/700 VUs, 3636 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m16.0s), 646/700 VUs, 3641 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m17.0s), 645/700 VUs, 3642 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m18.0s), 644/700 VUs, 3643 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+time="2026-03-30T09:27:37+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+
+running (1m19.0s), 643/700 VUs, 3644 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m20.0s), 643/700 VUs, 3644 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+time="2026-03-30T09:27:39+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+
+running (1m21.0s), 639/700 VUs, 3648 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m22.0s), 639/700 VUs, 3648 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m23.0s), 637/700 VUs, 3650 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m24.0s), 637/700 VUs, 3650 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m25.0s), 636/700 VUs, 3651 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m26.0s), 636/700 VUs, 3651 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+
+running (1m27.0s), 635/700 VUs, 3652 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+time="2026-03-30T09:27:46+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:46+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+
+running (1m28.0s), 633/700 VUs, 3654 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+
+running (1m29.0s), 627/700 VUs, 3660 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:47+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+
+running (1m30.0s), 498/700 VUs, 3789 complete and 0 interrupted iterations
+default ↓ [ 100% ] 700 VUs  1m0s
+time="2026-03-30T09:27:48+05:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8080/\": request timeout"
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3800   42.207278/s
+    checks_succeeded...: 96.05% 3650 out of 3800
+    checks_failed......: 3.94%  150 out of 3800
+
+    ✗ status is 200
+      ↳  96% — ✓ 3650 / ✗ 150
+
+    HTTP
+    http_req_duration..............: avg=10.3s  min=559.11ms med=4.1s  max=1m0s   p(90)=25.58s p(95)=40.73s
+      { expected_response:true }...: avg=8.26s  min=559.11ms med=3.88s max=56.03s p(90)=19.27s p(95)=28.02s
+    http_req_failed................: 3.94%  150 out of 3800
+    http_reqs......................: 3800   42.207278/s
+
+    EXECUTION
+    iteration_duration.............: avg=10.28s min=659.89ms med=4.22s max=1m0s   p(90)=25.52s p(95)=40.06s
+    iterations.....................: 3790   42.096206/s
+    vus............................: 498    min=498         max=700
+    vus_max........................: 700    min=700         max=700
+
+    NETWORK
+    data_received..................: 1.4 MB 15 kB/s
+    data_sent......................: 3.0 MB 33 kB/s
+
+
+
+
+running (1m30.0s), 000/700 VUs, 3789 complete and 498 interrupted iterations
+default ✓ [ 100% ] 700 VUs  1m0s
